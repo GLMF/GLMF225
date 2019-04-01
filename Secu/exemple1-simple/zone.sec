@@ -1,0 +1,9 @@
+; zone.sec
+; name ttl class ressource-records name-server email-addr
+; (serial refresh retry expire minimum)
+$TTL    1D
+@              IN SOA @ postmaster ( 42 3H 15M 1W 1D )
+               IN NS    sec.
+               IN A     127.0.0.2
+glmf           IN A     127.0.0.3
+               IN NS    glmf.sec.

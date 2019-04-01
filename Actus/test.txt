@@ -1,0 +1,3 @@
+Ceci est un petit texte de test.
+Il permet de tester la fonction de lecture
+de fichiers !

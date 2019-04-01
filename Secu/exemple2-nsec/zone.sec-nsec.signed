@@ -1,0 +1,101 @@
+; File written on Wed Dec 19 14:23:37 2018
+; dnssec_signzone version 9.12.3-P1
+sec.			86400	IN SOA	sec. postmaster.sec. (
+					44         ; serial
+					10800      ; refresh (3 hours)
+					900        ; retry (15 minutes)
+					604800     ; expire (1 week)
+					86400      ; minimum (1 day)
+					)
+			86400	RRSIG	SOA 8 1 86400 (
+					20190319132337 20181219122337 53406 sec.
+					FueQP1j1OX+RDF5z9JfTuYyoxl844xbYjyZJ
+					MOZ1KtDCDr9Me2OPS57I+WuD0jnulxjBYLkx
+					taJJqWMPppYbOXB1WuRxI+kbVrttid6pwfvs
+					bP2nq+4U5+fUNmHwNa3MKH/Pq2bWgTM4okhH
+					q3gdWDeJAxSqFBGvcqJTz93bZuY= )
+			86400	NS	sec.
+			86400	RRSIG	NS 8 1 86400 (
+					20190319132337 20181219122337 53406 sec.
+					dD780PclUZ+h6zv0nW1+zU/Twmegc3KiUuRS
+					XjH9yZOeXJ8hE67KNVel0tcDPWIf7G7Mhebk
+					bdesk5WSLtAfrQpwzc0qe8yT0G1xcJaHPl2I
+					l7tOQIkL3qGT3DlADKDuh0ljLZ/B0qDbH+3p
+					9SJkDwAfdbnHpXtD4qXll2e+/vs= )
+			86400	A	127.0.0.2
+			86400	RRSIG	A 8 1 86400 (
+					20190319132337 20181219122337 53406 sec.
+					GCbkvTA4yb14boPPNLPuXlnPnJ2kwqvuW2Dt
+					vU0O1PsYm/hajLaYDgu1GANvwQY7V/4RKvdu
+					B+XpbYzHYAIlPjEAskVnpGOx6DklEX4J/XJe
+					CeGWXsjkIM4AJNdSr9ZMHjDVFQIeooXOrUB7
+					b6WS77eD3X3qW06QAOA8qjsmfzg= )
+			86400	NSEC	glmf.sec. A NS SOA RRSIG NSEC DNSKEY
+			86400	RRSIG	NSEC 8 1 86400 (
+					20190319132337 20181219122337 53406 sec.
+					J2kLXupXWoUP6IqQ/4DYeTDEIx1itgndflzs
+					YwrCecnvGee1ItobzjlM/1rjbf+Qx2Z2FwUT
+					ueiFtFy/Koae2DAqMUlnKXCU5VfePAawPcIs
+					1GEpZVEyKz1MzFN084xhznPUMyTtVciNMc7/
+					42OhBWrD2Ssp8FcIdmVpuy/WZr8= )
+			86400	DNSKEY	256 3 8 (
+					AwEAAboWkFUcPAwvVbLilvuMqZveNt6xtiwB
+					a6NcLJ4zGJwIZU/cfNtjQblIbOWVV7JYgbfD
+					nJTJgRAiVdZa0RmFrgg9YRdeoBlcsRbEkJom
+					CBNZ2KRK4qA7tebTwfvRiV2NIwjiDlhbdTpk
+					z/VsAT3CnRJfojUGAA5/HDu72T5QQbNn
+					) ; ZSK; alg = RSASHA256 ; key id = 53406
+			86400	DNSKEY	257 3 8 (
+					AwEAAcWIpJtJipCrZ+hrEdDmvGZ//AtcLVy1
+					QGmik5wGeLbiDB73MgG+UHuOVHZXckrquGkF
+					cDsrYZW4QqgW9r/OhXWn0SXNb/8i1G3WlY9N
+					sNnUSocgX7oWtvnn8bwmmhTJm2y9lnFfTRSm
+					F4kutXyvHQ7bm1HOhcG1n7ah6EebLolxB63j
+					PaLgpCZiYtrP3lm980016Hl0uEvuHBqXFGYw
+					mZqZBcjN470rLsygY97X6u0Yw2sJ7JIgOW2f
+					mOXkwit/svfqrji+BPgUKBy+nYJn05BbLd0C
+					pqysNC8TksjKZBN4cL3P0GU5GChu6TeNyO9l
+					FnUDsjuH2KtUrkXbExZ1P3s=
+					) ; KSK; alg = RSASHA256 ; key id = 49765
+			86400	RRSIG	DNSKEY 8 1 86400 (
+					20190319132337 20181219122337 49765 sec.
+					lPYqgg4BxdCwyZkgA6+MMYKrDuMCquuuF6Nc
+					Co6PXlzC2oMSJ8CCfwxQN0OmjErWR8VBy1Gl
+					o4H0kckixoZfj2MZX8ZBWIzlubuqdNdQoel8
+					AF/4oeYeeEX/3nZ9xatcXLD3IXY4cySpheis
+					14RsjPHA2k9ZPOOQ63dNrc8r13UT8re3trGd
+					7HviR86m/vpQbcT/MJ8yf1LUsv/y8aiOleHn
+					4wdV8KeCD/B8sARv/NjesLsEuBzEEI6IUidW
+					3gQBnaPFNR457A62cWhcm1whW7Vngs0qaVhG
+					M0FjuSbATI7VdLthF/RZdI3FmSaz2a6e+zSp
+					O0UtiAdZsEVd0i/zmw== )
+			86400	RRSIG	DNSKEY 8 1 86400 (
+					20190319132337 20181219122337 53406 sec.
+					O/fGW67eoYHY56GjYP6aP8y8oxlr8AqYaJLf
+					SnLKiNPGa0cBqhU+6q2nrN1zv6xUtwN+rZeB
+					n/0uU5cpL/Gcjatwq5DxMT4B7l0cOeaaEPIV
+					emdMoCvIirq1ER74Q6Of03qOoLy/Nmzi212K
+					JDdJdPF/HqP5dqX1jfopZYKr5c4= )
+glmf.sec.		86400	IN NS	glmf.sec.
+			86400	A	127.0.0.3
+			86400	DS	5644 8 1 (
+					DF29C940571441AC58C3209C72FC541C73E0
+					12A0 )
+			86400	DS	5644 8 2 (
+					831CCC789077C26BCBBF8DA371778D30F5F6
+					7E38156642F25330A164FB6F9900 )
+			86400	RRSIG	DS 8 2 86400 (
+					20190319132337 20181219122337 53406 sec.
+					N6Vn+trxyHgeFyETWNjvXzfLFeoVYo6d2ET1
+					N7DUvtsHCOEZVjQc3zy9SNDTcReKRe00R4JR
+					LhtGFBobCgT6hAgLRPN6axi4vyeo7T3bXP9S
+					b/cANI588RyRYMUSaLihJD/Ixnp3ZUCnsOjd
+					TJfb1SGQ7SdEziNgqOz1n7PLx78= )
+			86400	NSEC	sec. NS DS RRSIG NSEC
+			86400	RRSIG	NSEC 8 2 86400 (
+					20190319132337 20181219122337 53406 sec.
+					DPYVOqKKPp9Nqw64oFebyvzjd4o68u/O9Itd
+					I1BG92zqGV8GIx8PNZG3OaB4nXhVlj/q158R
+					v3uSrch8+iZq5GbArauqTOkrD1wD/UWQ+UWF
+					HSDu+TNR1NMY+MCPMuH2ofiDDp3Xwr5+cOW7
+					kDaRiKzi6tKN9dydW54B/Ulwbxc= )

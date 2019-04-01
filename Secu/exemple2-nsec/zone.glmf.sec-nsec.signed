@@ -1,0 +1,118 @@
+; File written on Wed Dec 19 13:24:20 2018
+; dnssec_signzone version 9.12.3-P1
+glmf.sec.		86400	IN SOA	glmf.sec. postmaster.glmf.sec. (
+					44         ; serial
+					10800      ; refresh (3 hours)
+					900        ; retry (15 minutes)
+					604800     ; expire (1 week)
+					86400      ; minimum (1 day)
+					)
+			86400	RRSIG	SOA 8 2 86400 (
+					20190319122420 20181219112420 6249 glmf.sec.
+					TgH6kZ3N3v/X2ENg6Xwrp9GFRDJEKITMXs4G
+					7VifCe+0OW4vHIgDxeqki/exxtFUSOtQZpJl
+					hUrLB5TyvaRAZvdaERBLG+ERxRNJ7YMNhtuc
+					yCo7zL6xTmptZ5hbfLx+XJGnUKyTeGRwIjtx
+					MMJEfUJE0lWgfT8axOKsc7TEDC8= )
+			86400	NS	glmf.sec.
+			86400	RRSIG	NS 8 2 86400 (
+					20190319122420 20181219112420 6249 glmf.sec.
+					e1tbggEG4xTUHMX9G3/dhBaB4kXu+FG3LEqt
+					YdI92FagGiwLhFc+k60KIY83wOwzI8cB2VnG
+					uvY8OK79SPb6RUMDMKqnQmacPTxG0EodD5Ws
+					voUWYF7doY68ZDtVcmWrnr/tiuUk3VInJoaS
+					FWmQD6+gNfWxwEPz0ITmgMGIYR8= )
+			86400	A	127.0.0.3
+			86400	RRSIG	A 8 2 86400 (
+					20190319122420 20181219112420 6249 glmf.sec.
+					QUevM4wPm4MW62Q9LGToR4piOmF6+lgIPS4C
+					knugZQuruipkTqi/xPG/rQkl8PAJxbSojLuh
+					TD+Qb+FkT2cIuuo8pRFYn+LvkQU3F/RUYpU9
+					8CJ5eRddIVz41PdSpI2hWdzoZwBFyVFex19M
+					YlM9mON1lZHiQtkP88/oeyjKVGc= )
+			86400	NSEC	w3.glmf.sec. A NS SOA RRSIG NSEC DNSKEY
+			86400	RRSIG	NSEC 8 2 86400 (
+					20190319122420 20181219112420 6249 glmf.sec.
+					pVStbAiuZPMjflUgbwZoBJGtuYAlqE0DG/3o
+					VnzJhOjSZu3j6ssgi/XnOjdVMRkX/tvbflyg
+					OwGed/J8NHtuNXgpBuEGAy9avIMC4QtQ4UOm
+					mjUbT2f7/8wacjN4lZUG5qazMIKrAFSYF6hU
+					toO+TOgEvj4sCceth2Rodmiimuc= )
+			86400	DNSKEY	256 3 8 (
+					AwEAAdiOn5DZTllPMIBrqpFgJP1CT9Q6cL2b
+					EcJ+ZLpl/RjzyflZwZBWhWvbX92WqIDWKPSf
+					aw8F6xcxHyHlL3ZXAQKBu9TQuivGUpEUjGSb
+					cE7i3iID/JM5fxqtuVD+gpUEfbTkgx9q5U7h
+					+91Jr55M6m9LlCoxTylicqy1/E3bhRzv
+					) ; ZSK; alg = RSASHA256 ; key id = 6249
+			86400	DNSKEY	257 3 8 (
+					AwEAAb2+bMeCzau+M+/aIOBErHqfjuhkXvdb
+					PbhuwMLBrZYBBFGh7AqPZPaHbVC9au+ekyb8
+					B2BJdFKoUO1nk0kE7C8mWt7edl2DReqpcLR9
+					7UBchx+hTeITBD19ag3iht+JwnzBD49QWoVV
+					UwSTO9tXDjwpFJooj6+tVqb0L5kV5rn7jdN7
+					9fQp+pCnGE6ticjnn2hCXLb9Zt4jkY4FZ4w+
+					uZb0G70zM9PQVTk3+iQM4fmb8OHth1o4HkFq
+					bGjZLxowD7zYj9Taoqox+4kdQPvK2MleoteH
+					QKnuEQBHG6o+NZ/paj7nihHQZJy98vlZANlq
+					vcT+4y/xm0QUc3nSHhgjIpE=
+					) ; KSK; alg = RSASHA256 ; key id = 5644
+			86400	RRSIG	DNSKEY 8 2 86400 (
+					20190319122420 20181219112420 5644 glmf.sec.
+					EHnwjG6lumk+jsFfujdDSDaZkGE0GepnEHfB
+					YIQDFvNn5D3SmTEj2yaLR0YKj3hTH/6FHXB9
+					TgfyQHrkieWf6K8+Mt2L329O3CT1cYy3Ctbk
+					JiFQH/juc3tmdOk/EvOF1H6Ty9LuY88j1BzX
+					sYbik+s0Ga77hjgAlsebEvRkLJJi5wS3gcZn
+					nurHAoKHdHi4d+tK31x5mIo6lhx6HCn8VY9N
+					LpXllRsoap+4JJInTYfmjVKIt2AjvzGQN1m2
+					Def7CJeWcOGkCjQh9WxlQlZE4UCEMtYYE90k
+					OhXoklXSEKGBZyRPZ+96kb7A3ROID7j4ifQB
+					2OdBvQycL8jWftZO1A== )
+			86400	RRSIG	DNSKEY 8 2 86400 (
+					20190319122420 20181219112420 6249 glmf.sec.
+					X7BmJvoBWi1Oibbak003IyEs8h5/okooh/ot
+					T37QPtv2e3Exf2PtFxl1BkkpLuBrr4YjE25p
+					EjChJ4zXJkiasUs8uisNbRW5+5W8riBe/7ME
+					VV9tQRsElDDpNu3y4+di+y7P8nS1bEiFzsG6
+					OvoJ/pEtxx7NBJHuy/+bXv0eRnM= )
+w3.glmf.sec.		86400	IN CNAME www.glmf.sec.
+			86400	RRSIG	CNAME 8 3 86400 (
+					20190319122420 20181219112420 6249 glmf.sec.
+					kgcQsQf24BTyoBtHvD3yIMC9wHdJmyKSOcWq
+					JLOR8jfXkU/LjHDdp+or4+f9c1xogn/y1z/7
+					UG/o75gJ+K6KqJo+6TfOaGih6tEmj2clsAir
+					7aElwESJTXvr+gYjYJ5Vo6ys274mdEd6Itn8
+					9WnZTEMmuWOKTzVmjFx4ntsacik= )
+			86400	NSEC	www.glmf.sec. CNAME RRSIG NSEC
+			86400	RRSIG	NSEC 8 3 86400 (
+					20190319122420 20181219112420 6249 glmf.sec.
+					MdOWkNSE5LUi/yfBw+HbwfiEoSM8vT0NWSoj
+					CIPzW83zQGVsHKaI8sd5ibC98n82kCgUl/ht
+					5M9CgqcrqWTnvjVHv3bo6BNlxnPeDreAqV/5
+					qB9YDI8EKOVRHUKAZYjSBRJxLr5XVfFF2R+B
+					nwNn1bPorOvHGFcGn6UZ/EAAM3E= )
+www.glmf.sec.		86400	IN A	127.0.0.4
+			86400	RRSIG	A 8 3 86400 (
+					20190319122420 20181219112420 6249 glmf.sec.
+					ldTaCphzLThwOUmp70xA/OqK5IoaNy5lpVQk
+					nWs26h6FeqKokOqYNpfPResaQDBLE3yBChqX
+					DW0c2Zij+cDfTZuz3FCdUL28ZMtmxiCdrSWe
+					6v0FXJOeeD/Std8lUMXPCl+uzk/0gombeAq0
+					rFBeVLIAvV5caaP/fZCzBpQ2cJ8= )
+			86400	AAAA	::1234
+			86400	RRSIG	AAAA 8 3 86400 (
+					20190319122420 20181219112420 6249 glmf.sec.
+					FMovyOV9UrDHFc+MRQFrIZBMcU//IfkWSNHg
+					oTHaK1l7b1IYogeUwGQIyHg4nZrR/iKJHyqf
+					4cdkAD34NDXZDnRXseGS0LdhPNpzMxubFgGb
+					zZAMTDZAgpzsvw9xOuNe79wYPNwD936vhQAO
+					u7IDOQ94TKUiUc8h2qn8vTcFM+0= )
+			86400	NSEC	glmf.sec. A AAAA RRSIG NSEC
+			86400	RRSIG	NSEC 8 3 86400 (
+					20190319122420 20181219112420 6249 glmf.sec.
+					k+qyMFwlT3H3SomjO1kg38r5roi6AcuVfRYA
+					LlSEAb0SQEZdiFNqIqezujnYKUqca2XTW5Q5
+					KtX385GFUPife889aA5sHN5wbF/F6OGQCeT3
+					/xzDGDuA3abgBZg8Hfdr20oVB0UWpKySYQFw
+					CRWPBQYha9/5JkxEBkkw3OQHyJ4= )

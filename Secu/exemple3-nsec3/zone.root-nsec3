@@ -1,0 +1,15 @@
+; zone.root
+; name ttl class ressource-records name-server email-addr
+; (serial refresh retry expire minimum)
+$TTL    1D
+@              IN SOA @ postmaster ( 45 3H 15M 1W 1D )
+               IN NS    .
+               IN A     127.0.0.1
+sec            IN A     127.0.0.2
+               IN NS    sec.
+; key-signing key for .
+$INCLUDE K.+007+38286.key
+; zone-signing key for .
+$INCLUDE K.+007+36692.key
+; DS records for sec.
+$INCLUDE dsset-sec.

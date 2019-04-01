@@ -1,0 +1,8 @@
+managed-keys {
+  # keytag: 7158
+  . initial-key 256 3 8
+               "AwEAAc924YCTrHlyZTasyHvLdaDl0AaxxvO4V4ht8M+RpMqvPjJxXfXt
+                QzW3CQNFD8+AzBaO3Zm1mSVteEK5h3F2cCu3pBf4qMtCCxU4TJG7M2hi
+                LhWFTu2UUXRopCu/CQzYrIu3jw8VOCZdyok6QTBZ/gW2FNMAbrP3pLn2
+                HFixOVL5";
+};

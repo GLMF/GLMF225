@@ -1,0 +1,14 @@
+; zone.glmf.sec-nsec
+; name ttl class ressource-records name-server email-addr
+; (serial refresh retry expire minimum)
+$TTL    1D
+@              IN SOA @ postmaster ( 43 3H 15M 1W 1D )
+               IN NS    glmf.sec.
+               IN A     127.0.0.3
+www            IN A     127.0.0.4
+               IN AAAA  ::1234
+w3             IN CNAME www
+; key-signing key for glmf.sec.
+$INCLUDE Kglmf.sec.+008+05644.key
+; zone-signing key for glmf.sec.
+$INCLUDE Kglmf.sec.+008+06249.key
